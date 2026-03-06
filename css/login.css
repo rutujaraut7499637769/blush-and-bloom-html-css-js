@@ -20,12 +20,34 @@ body {
 }
 
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #d63384;
+.logo{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-left:0.001cm;
 }
 
+
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.brand{
+    font-family:serif;
+    color:#d63384;
+   
+}
 
 .nav-links {
     list-style: none;
@@ -58,9 +80,9 @@ body {
     border: 1px solid #d63384;
     border-radius: 25px;
     text-decoration: none;
-    color: #faf6f8;
+    color: #ca136e;
     transition: 0.3s;
-    background-color: #d63384;
+   
 
 }
 
@@ -102,6 +124,7 @@ body {
 .left h1 {
     font-size: 55px;
     font-weight: bold;
+     padding-left: 30px;
 }
 
 .left span {
@@ -109,16 +132,19 @@ body {
 }
 
 .left p {
-    margin: 20px 0;
+    margin: 25px 0;
     line-height: 1.6;
     color: #444;
+    padding-left: 30px;
+    font-size:medium
 }
 
-.buttons button {
+.buttons  {
     padding: 10px 15px;
     margin-right: 10px;
     border: none;
     cursor: pointer;
+     padding-left: 30px;
 }
 
 .btn {
