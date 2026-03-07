@@ -18,3 +18,18 @@ cards[i].style.display="none";
 
 }
 
+
+
+
+let buttons = document.querySelectorAll(".card button");
+
+buttons.forEach(function(btn){
+
+btn.addEventListener("click", function(){
+
+btn.innerText = "Added";
+btn.classList.add("added");
+
+});
+
+});
