@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8fb;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #f8c8dc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    position: sticky;
+}
+
+
+.logo{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-left:0.001cm;
+}
+
+
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.brand{
+    font-family:serif;
+    color:#d63384;
+   
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d63384;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.login-btn {
+    padding: 8px 18px;
+    border: 1px solid #d63384;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #ca136e;
+    transition: 0.3s;
+   
+
+}
+
+.login-btn:hover {
+    background-color: #d63384;
+    color: white;
+}
+
+.signup-btn {
+    padding: 8px 20px;
+    background-color: #d63384;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #b0256a;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background: linear-gradient(to right, #ffeef3 60%, transparent),
+                url('https://images.unsplash.com/photo-1526045612212-70caf35c14df') no-repeat right;
+    background-size: cover;
+}
+
+/* LEFT TEXT */
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 55px;
+    font-weight: bold;
+     padding-left: 30px;
+}
+
+.left span {
+    color: #e91e63;
+}
+
+.left p {
+    margin: 25px 0;
+    line-height: 1.6;
+    color: #444;
+    padding-left: 30px;
+    font-size:medium
+}
+
+.buttons  {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+     padding-left: 30px;
+}
+
+.btn {
+    padding: 8px 18px;
+    border: 1px solid #d63384;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #faf6f8;
+    transition: 0.3s;
+    background-color: #d63384;
+}
+
+.btn-outline {
+      padding: 8px 18px;
+    border: 1px solid #d63384;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #faf6f8;
+    transition: 0.3s;
+    background-color: #d63384;
+}
+
+/* RIGHT LOGIN CARD */
+.right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card {
+    background: #fff;
+    padding: 40px;
+    width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.login-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.login {
+    width: 100%;
+    background: #d63384;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid #d63384;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* Close Button (just UI like image) */
+.close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ff4d88;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #f8c8dc;   
+    color: #333;
+    padding: 50px 8% 25px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 230px;
+}
+
+.footer-logo {
+    color: #d63384;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.footer h3 {
+    margin-bottom: 18px;
+    color: #d63384;
+    font-size: 18px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #d63384;
+    padding-left: 5px;
+}
+
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #d63384;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #b0256a;
+    transform: translateY(-4px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #f3b3cf;
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    flex: 1;
+}
