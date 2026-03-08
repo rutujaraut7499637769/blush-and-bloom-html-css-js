@@ -333,7 +333,18 @@ body {
     margin-bottom: 15px;
 }
 
-
+.arrow-btn {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #7a2a2a; 
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+}
 
 .concern-card img {
     width: 100%;
