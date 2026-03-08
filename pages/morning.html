@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Routine | Blush & Bloom1</title>
+    <title>Morning Routine.</title>
     <link rel="stylesheet" href="css/index.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="../css/navbar.css">
@@ -27,25 +27,42 @@
             <a href="../pages/signup.html" class="signup-btn">Sign Up</a>
         </div>
     </nav>
-<section class="routine-main">
+<section class="routine-detail">
 
-<h1>🌸 Skincare Routine Guide...!</h1>
-<p>select your daily skincare routine.</p>
+<h1> <img src="../images/icons8-sun-48.png" class="icon-img">Day Skincare Routine</h1>
 
-<div class="routine-container">
+<div class="steps-container">
 
-<div class="routine-card" onclick="morning()">
-<h2><img src="../images/icons8-sun-48.png" class="icon-img">Day Routine</h2>
-<p>Start your day with glowing skin..!</p>
-<button>View Routine</button>
+<div class="card">
+<h3>Step 1 – Cleanser <img src="../images/face-cleanser (2).png" class="icon-img"></h3>
+<p>Removes dirt and oil from skin.</p>
+<button onclick="done(this)">Mark as Done</button>
 </div>
 
-<div class="routine-card" onclick="night()">
-<h2><img src="../images/icons8-moon-64.png" class="icon-img">Night Routine</h2>
-<p>Repair your skin while sleeping..!</p>
-<button>View Routine</button>
+<div class="card">
+<h3>Step 2 – Serum <img src="../images/serum (1).png" class="icon-img"></h3>
+<p> brightness and nourishes skin.</p>
+<button onclick="done(this)">Mark as Done</button>
 </div>
 
+<div class="card">
+<h3>Step 3 – Moist <img src="../images/night-cream (1).png" class="icon-img"></h3>
+<p>Hydrate and protect your skin.</p>
+<button onclick="done(this)">Mark as Done</button>
+</div>
+
+<div class="card">
+<h3>Step 4 – SC<img src="../images/sunscreen (1).png" class="icon-img"></h3>
+<p>Protect skin from UV rays.</p>
+<button onclick="done(this)">Mark as Done</button>
+</div>
+
+
+<div class="card">
+    <h3>Step 5 – Lip balm <img src="../images/lip-balm (1).png" class="icon-img"></h3>
+<p>keep lips soft & smmooth.</p>
+<button onclick="done(this)">Mark as Done</button>
+</div>
 </div>
 
 </section>
@@ -69,14 +86,14 @@
                 and dermatologist-inspired products.
             </p>
 
-            <div class="social-icons">
+           <div class="social-icons">
                
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-pinterest"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-        </div>
+        </div> 
 
       
         <div class="footer-col">
@@ -112,8 +129,6 @@
                 </a>
          
         </div> 
-
-    </div>
 </footer>
 </body>
 </html>

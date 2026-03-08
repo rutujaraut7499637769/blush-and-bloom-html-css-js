@@ -14,3 +14,4 @@ i = 0;
 slides[i].classList.add("active");
 
 },3000);
+

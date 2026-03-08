@@ -3,9 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Product page</title>
+     <link rel="stylesheet" href="./../css/index.css">
+     <link rel="stylesheet" href="./../css/product.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+        <img src="./../logo.jpeg" alt="Logo!!!" class="logo">
+        <h2 class="brand">Blush & Bloom</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="./../pages/product.html">Products</a></li>
+            <li><a href="./../pages/routine.html">Routine</a></li>
+            <li><a href="./../pages/about.html">About</a></li>
+            <li><a href="./../pages/contact.html">Contact</a></li>
+            <li><a href="./../pages/feedback.html">Feedback</a></li>
+        </ul>
+
+        <div class="auth-buttons">
+            <a href="./../pages/login.html" class="login-btn">Login</a>
+            <a href="./../pages/signup.html" class="signup-btn">Sign Up</a>
+        </div>
+    </nav>
+
+   <section class="slider">
+
+<img src="./../images/slide1.webp" class="slide active">
+<img src="./../images/slide2.webp" class="slide">
+<img src="./../images/slide3.webp" class="slide">
+<img src="./../images/slide4.webp" class="slide">
+<img src="./../images/slide5.webp" class="slide">
+<img src="./../images/slide6.webp" class="slide">
+</section>
+
+<div class="search">
+<input type="text" id="searchBar" placeholder="Search product..." onkeyup="searchProduct()">
+</div>
+
+<div class="container" id="productList">
+
+<div class="card"><img src="./../images/face wash.png"><h3>Face Wash</h3><p class="price">₹199</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/aloevelagal.png"><h3>Aloe Vera Gel</h3><p class="price">₹249</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/vital vitamin c serum.png"><h3>Vitamin C Serum</h3><p class="price">₹499</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/moisturizing.png"><h3>Moisturizer</h3><p class="price">₹299</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/premium.png"><h3>Sunscreen SPF 50</h3><p class="price">₹399</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/nightcream.png"><h3>Night Cream</h3><p class="price">₹450</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/facescrup.png"><h3>Face Scrub</h3><p class="price">₹220</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/UnderEyeCream.png"><h3>Under Eye Cream</h3><p class="price">₹350</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/facetoner.png"><h3>Face Toner</h3><p class="price">₹280</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/charcoalmask.png"><h3>Charcoal Mask</h3><p class="price">₹320</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/claymask.png"><h3>Clay Mask</h3><p class="price">₹340</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/hydratingserum.png"><h3>Hydrating Serum</h3><p class="price">₹410</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/rosewater.png"><h3>Rose Water</h3><p class="price">₹150</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/faceoil.png"><h3>Face Oil</h3><p class="price">₹380</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/AntiAgingCream.png"><h3>Anti Aging Cream</h3><p class="price">₹520</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/brighteningcream.png"><h3>Brightening Cream</h3><p class="price">₹430</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/facemist.png"><h3>Face Mist</h3><p class="price">₹260</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/LipBalm.png"><h3>Lip Balm</h3><p class="price">₹120</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/HandCream.png"><h3>Hand Cream</h3><p class="price">₹180</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/BodyLotion1.png"><h3>Body Lotion</h3><p class="price">₹350</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/FacePack.png"><h3>Face Pack</h3><p class="price">₹300</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/GlowCream.png"><h3>Glow Cream</h3><p class="price">₹420</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/AcneGel.png"><h3>Acne Gel</h3><p class="price">₹290</p><button>Add to Cart</button></div>
+
+<div class="card"><img src="./../images/WhiteningCream.png"><h3>Whitening Cream</h3><p class="price">₹460</p><button>Add to Cart</button></div>
+
+
+</div>
+<script src="./../js/index.js"></script>
+
+<script src="./../js/product.js"></script>
+
+   <footer class="footer">
+
+    <div class="footer-container">
+
     
+        <div class="footer-col">
+            <h2 class="footer-logo">Blush & Bloom</h2>
+            <p>
+                Blush & Bloom is your trusted skincare partner, 
+                helping you glow naturally with safe, effective 
+                and dermatologist-inspired products.
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+      
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="./../pages/product.html">Products</a></li>
+                <li><a href="./../pages/routine.html">Routine</a></li>
+                <li><a href="./../pages/about.html">About</a></li>
+                <li><a href="./../pages/login.html">Login</a></li>
+                <li><a href="./../pages/signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+
+    <div class="footer-col">
+            <h3>Our Features</h3>
+            <ul>
+                <li> Dermatologist Approved</li>
+                <li> Natural & Safe Ingredients</li>
+                <li>Advanced Skincare Routine Guide</li>
+                <li>Cruelty Free Products</li>
+                <li>Trusted by 10k+ Customers</li>
+            </ul>
+        </div>
+             
+       <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p>📍 Sangli, Maharashtra, India</p>
+            <p>📞 +91 8788989941</p>
+            <p>📧 support@blushandbloom.com</p>
+        </div> 
+
+    </div>
+</footer>
 </body>
 </html>

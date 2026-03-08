@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Routine | Blush & Bloom1</title>
+    <title>Night Routine</title>
     <link rel="stylesheet" href="css/index.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="../css/navbar.css">
@@ -22,30 +22,52 @@
             <li><a href="../pages/feedback.html">Feedback</a></li>
         </ul>
 
-        <div class="auth-buttons">
+       <div class="auth-buttons">
             <a href="../pages/login.html" class="login-btn">Login</a>
             <a href="../pages/signup.html" class="signup-btn">Sign Up</a>
-        </div>
+        </div> 
     </nav>
-<section class="routine-main">
+<section class="routine-detail">
 
-<h1>🌸 Skincare Routine Guide...!</h1>
-<p>select your daily skincare routine.</p>
+<h1><img src="../images/icons8-moon-64.png" class="icon-img">Night Skincare Routine</h1>
 
-<div class="routine-container">
+<div class="steps-container">
 
-<div class="routine-card" onclick="morning()">
-<h2><img src="../images/icons8-sun-48.png" class="icon-img">Day Routine</h2>
-<p>Start your day with glowing skin..!</p>
-<button>View Routine</button>
+<div class="card">
+<h3>Step 1 – MUR<img src="../images/makeup-remover (2).png" class="icon-img"></h3>
+<p>Remove makeup and sunscreen.</p>
+<button onclick="done(this)">Mark as Done</button>
 </div>
 
-<div class="routine-card" onclick="night()">
-<h2><img src="../images/icons8-moon-64.png" class="icon-img">Night Routine</h2>
-<p>Repair your skin while sleeping..!</p>
-<button>View Routine</button>
+<div class="card">
+<h3>Step 2 – Cleanser<img src="../images/face-cleanser (2).png" class="icon-img"></h3>
+<p>Deep clean your skin.</p>
+<button onclick="done(this)">Mark as Done</button>
 </div>
 
+<div class="card">
+<h3>Step 3 – Toner<img src="../images/toner (1).png" class="icon-img"></h3>
+<p>Refresh and balance skin.</p>
+<button onclick="done(this)">Mark as Done</button>
+</div>
+
+<div class="card">
+<h3>Step 4 – Eye-cr <img src="../images/cream (1).png" class="icon-img"></h3>
+<p>Deep clean your skin.</p>
+<button onclick="done(this)">Mark as Done</button>
+</div>
+
+<div class="card">
+<h3>Step 5 – Night-Cr <img src="../images/night-cream (1).png" class="icon-img"></h3>
+<p>Nourish and repair overnight.</p>
+<button onclick="done(this)">Mark as Done</button>
+</div>
+
+<div class="card">
+<h3>Step 6 – Lip balm<img src="../images/lip-balm (1).png" class="icon-img"> </h3>
+<p>Nourish and repair overnight.</p>
+<button onclick="done(this)">Mark as Done</button>
+</div>
 </div>
 
 </section>
@@ -112,8 +134,7 @@
                 </a>
          
         </div> 
-
-    </div>
 </footer>
+
 </body>
 </html>
