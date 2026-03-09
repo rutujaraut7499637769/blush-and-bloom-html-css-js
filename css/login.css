@@ -230,7 +230,7 @@ body {
 .footer {
     background-color: #f8c8dc;   
     color: #333;
-    padding: 50px 8% 25px;
+    padding: 80px 8% 25px
 }
 
 .footer-container {
@@ -330,8 +330,4 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-}
-
-.hero {
-    flex: 1;
 }

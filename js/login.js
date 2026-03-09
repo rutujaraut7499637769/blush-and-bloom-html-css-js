@@ -1,18 +1,4 @@
-// Show/Hide Password
-function togglePassword(){
-    let pass = document.getElementById("password");
-    let toggle = document.querySelector(".toggle-password");
-
-    if(pass.type === "password"){
-        pass.type = "text";
-        toggle.innerText = "Hide";
-    }else{
-        pass.type = "password";
-        toggle.innerText = "Show";
-    }
-}
-
-// Login Validation
+// Save login details in LocalStorage
 function validateLogin(){
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
@@ -20,25 +6,44 @@ function validateLogin(){
     let error = document.getElementById("errorMsg");
 
     if(email === "" || password === ""){
+        error.style.color = "red";
         error.innerText = "Please fill all fields!";
         return;
     }
 
     if(password.length < 6){
+        error.style.color = "red";
         error.innerText = "Password must be at least 6 characters!";
         return;
+    }
+
+    // Save data in LocalStorage if Remember Me checked
+    if(remember){
+        localStorage.setItem("userEmail", email);
+        localStorage.setItem("userPassword", password);
+    } else {
+        localStorage.removeItem("userEmail");
+        localStorage.removeItem("userPassword");
     }
 
     error.style.color = "green";
     error.innerText = "Login Successful!";
 
-    if(remember){
-        console.log("User wants to be remembered.");
+    // Redirect to home page
+    setTimeout(function(){
+        window.location.href = "../index.html";
+    },1000);
+}
+
+
+// Auto fill login form from LocalStorage
+window.onload = function(){
+    let savedEmail = localStorage.getItem("userEmail");
+    let savedPassword = localStorage.getItem("userPassword");
+
+    if(savedEmail && savedPassword){
+        document.getElementById("email").value = savedEmail;
+        document.getElementById("password").value = savedPassword;
+        document.getElementById("remember").checked = true;
     }
 }
-
-// Close Form
-function closeForm(){
-    document.getElementById("loginCard").style.display = "none";
-}
-
