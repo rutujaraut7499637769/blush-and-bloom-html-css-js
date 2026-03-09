@@ -101,6 +101,32 @@ body{
     gap: 15px;
 }
 
+.theme-btn{
+background:transparent;
+border:none;
+font-size:20px;
+cursor:pointer;
+color:#ff4d6d;
+margin-left:15px;
+}
+
+.dark-mode{
+background:#1a1a1a;
+color:white;
+}
+
+.dark-mode .navbar{
+background:#111;
+}
+
+.dark-mode .nav-links a{
+color:white;
+}
+
+.dark-mode .brand{
+color:#ff8fab;
+}
+
 .login-btn {
     padding: 8px 18px;
     border: 1px solid #d63384;

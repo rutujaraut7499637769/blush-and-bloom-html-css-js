@@ -12,5 +12,4 @@ else{
 alert("Login Successful");
 window.location.href="../index.html";
 }
-
 });
