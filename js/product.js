@@ -1,125 +1,74 @@
-
 const products = [
-{ name:"Face Wash", price:199, image:"./../images/face wash.png"},
-{ name:"Aloe Vera Gel", price:249, image:"./../images/aloevelagal.png"},
-{ name:"Vitamin C Serum", price:499, image:"./../images/vital vitamin c serum.png"},
-{ name:"Moisturizer", price:299, image:"./../images/moisturizing.png"},
-{ name:"Sunscreen SPF 50", price:399, image:"./../images/premium.png"},
-{ name:"Night Cream", price:450, image:"./../images/nightcream.png"},
-{ name:"Face Scrub", price:220, image:"./../images/facescrup.png"},
-{ name:"Under Eye Cream", price:350, image:"./../images/UnderEyeCream.png"}
+
+{name:"COSRX Snail Mucin Mask",price:150,oldPrice:250,discount:"40% OFF"},
+{name:"I'm From Ginseng Serum",price:1230,oldPrice:2050,discount:"40% OFF"},
+{name:"Dr Althea Relief Cream",price:2124,oldPrice:2499,discount:"15% OFF"},
+{name:"VT Cosmetics Reedle Shot",price:3149,oldPrice:4499,discount:"30% OFF"},
+{name:"COSRX Acne Bundle",price:2569,oldPrice:3950,discount:"35% OFF"},
+{name:"JMsolution Brightening Mask",price:540,oldPrice:990,discount:"45% OFF"},
+{name:"Collagen Booster Bundle",price:875,oldPrice:1250,discount:"30% OFF"},
+{name:"Rice Bran Sheet Mask",price:180,oldPrice:200,discount:"10% OFF"}
+
 ];
 
-const productList = document.getElementById("productList");
+function showProducts(){
 
+for(let i=0;i<products.length;i++){
 
+document.getElementById("p"+(i+1)).innerHTML=
 
-products.forEach((product,index)=>{
-
-productList.innerHTML += `
-<div class="card">
-
-<img src="${product.image}" class="product-img" onclick="openGallery('${product.image}')">
-
-<h3>${product.name}</h3>
-
-<p class="price">₹${product.price}</p>
-
-<div class="qty-box">
-
-<button onclick="decrease(${index})">-</button>
-
-<span id="qty${index}">1</span>
-
-<button onclick="increase(${index})">+</button>
-
-</div>
-
+`
+<h4>${products[i].name}</h4>
+<p class="price">Rs ${products[i].price}</p>
+<p class="old-price">Rs ${products[i].oldPrice}</p>
 <button onclick="addCart(this)">Add to Cart</button>
-
-</div>
 `;
 
-});
+document.getElementById("d"+(i+1)).innerHTML=products[i].discount;
 
+}
 
-
+}
 
 function addCart(btn){
 
-btn.innerText="Added";
+btn.innerHTML="✔ Added";
 btn.classList.add("added");
 
 }
 
-
-
-
-function increase(id){
-
-let qty=document.getElementById("qty"+id);
-qty.innerText=parseInt(qty.innerText)+1;
-
-}
-
-function decrease(id){
-
-let qty=document.getElementById("qty"+id);
-
-if(qty.innerText>1){
-qty.innerText=parseInt(qty.innerText)-1;
-}
-
-}
-
-
-
-
-function openGallery(img){
-
-let gallery=document.createElement("div");
-gallery.classList.add("gallery");
-
-gallery.innerHTML=`
-<div class="gallery-box">
-
-<img src="${img}">
-
-<button onclick="closeGallery()">Close</button>
-
-</div>
-`;
-
-document.body.appendChild(gallery);
-
-}
-
-function closeGallery(){
-
-document.querySelector(".gallery").remove();
-
-}
-
-
-
+/* SEARCH FUNCTION */
 
 function searchProduct(){
 
-let input=document.getElementById("searchBar").value.toLowerCase();
+let input = document
+.getElementById("searchInput")
+.value
+.toLowerCase();
 
-let cards=document.querySelectorAll(".card");
+let cards = document
+.getElementsByClassName("product-card");
 
-cards.forEach(card=>{
+let names = document
+.getElementsByTagName("h4");
 
-let name=card.querySelector("h3").innerText.toLowerCase();
+for(let i=0;i<names.length;i++){
 
-if(name.includes(input)){
-card.style.display="block";
+if(names[i].innerHTML
+.toLowerCase()
+.includes(input)){
+
+cards[i].style.display="block";
+
 }
 else{
-card.style.display="none";
-}
 
-});
+cards[i].style.display="none";
 
 }
+
+}
+
+}
+
+showProducts();
