@@ -141,7 +141,7 @@ body {
 .hero {
     flex: 1;
 }
-/* Hero Section */
+
 .hero {
     height: 90vh;
     display: flex;
@@ -153,7 +153,6 @@ body {
     background-size: cover;
 }
 
-/* LEFT TEXT */
 .left {
     width: 50%;
 }
@@ -184,6 +183,7 @@ body {
      padding-left: 30px;
 }
 
+
 .btn {
     padding: 8px 18px;
     border: 1px solid #d63384;
@@ -192,6 +192,10 @@ body {
     color: #faf6f8;
     transition: 0.3s;
     background-color: #d63384;
+}
+.btn:hover {
+    background-color: #24368d;
+    box-shadow: 5px 5px 6px  rgb(120, 120, 140);
 }
 
 .btn-outline {
@@ -203,13 +207,18 @@ body {
     transition: 0.3s;
     background-color: #d63384;
 }
+.btn-outline:hover {
+    background-color: #24368d;
+    box-shadow: 5px 5px 6px  rgb(120, 120, 140);
+}
 
-/* RIGHT LOGIN CARD */
 .right {
     width: 30%;
     display: flex;
     justify-content: center;
 }
+
+
 
 .login-card {
     background: #fff;
@@ -252,7 +261,15 @@ body {
     text-decoration: none;
 }
 
-/* Close Button (just UI like image) */
+.login:hover {
+    box-shadow: 5px 5px 6px  rgb(120, 120, 140);
+    transition: 0.3s ease-in-out;
+}
+
+.login:hover {
+    background-color: #24368d;
+}
+
 .close {
     position: absolute;
     top: -10px;
