@@ -1,4 +1,3 @@
-// Save login details in LocalStorage
 function validateLogin(){
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
@@ -17,7 +16,6 @@ function validateLogin(){
         return;
     }
 
-    // Save data in LocalStorage if Remember Me checked
     if(remember){
         localStorage.setItem("userEmail", email);
         localStorage.setItem("userPassword", password);
@@ -29,14 +27,11 @@ function validateLogin(){
     error.style.color = "green";
     error.innerText = "Login Successful!";
 
-    // Redirect to home page
     setTimeout(function(){
         window.location.href = "../index.html";
     },1000);
 }
 
-
-// Auto fill login form from LocalStorage
 window.onload = function(){
     let savedEmail = localStorage.getItem("userEmail");
     let savedPassword = localStorage.getItem("userPassword");
@@ -46,4 +41,21 @@ window.onload = function(){
         document.getElementById("password").value = savedPassword;
         document.getElementById("remember").checked = true;
     }
+}
+
+
+
+function login() {
+
+let email = document.getElementById("email").value;
+let password = document.getElementById("password").value;
+
+if(email === "" || password === ""){
+    alert("Please enter Email and Password");
+}
+else{
+    alert("Login Successful 🌸");
+    window.location.href = "../index.html";
+}
+
 }
