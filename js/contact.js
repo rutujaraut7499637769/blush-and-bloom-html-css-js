@@ -1,14 +1,5 @@
-alert("Welcome to blush & Bloom Contact Page🌸.");
-
-let visitorCount = localStorage.getItem("visitorCount");
-
-if (visitorCount === null) {
-    visitorCount = 1;
-} else {
-    visitorCount = Number(visitorCount) + 1;
-}
-
-localStorage.setItem("visitorCount", visitorCount);
+let visitorCount = 0;
+visitorCount++;
 
 function sendMessage() {
     let name = document.getElementById("name").value;
@@ -21,6 +12,7 @@ function sendMessage() {
 
     alert(`Hello ! ${name}.
     Thank you for contacting Blush & Bloom we received your message : ${message}
+    
     Our team will contact you soon on ${email}`);
 
     document.getElementById("name").value = "";

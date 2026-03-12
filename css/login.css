@@ -9,45 +9,64 @@ body {
     background-color: #fff8fb;
 }
 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d63384;
+
+}
+
+body {
+    margin: 0;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
     background-color: #f8c8dc;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    position: sticky;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-
-.logo{
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    object-fit:cover;
-    margin-left:0.001cm;
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 0.001cm;
 }
 
-
-
-.nav-left{
-    display:flex;
-    align-items:center;
-    gap:10px;
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.logo{
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    object-fit:cover;
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.brand{
-    font-family:serif;
-    color:#d63384;
-   
+.brand {
+    font-family: serif;
+    color: #d63384;
 }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
 
 .nav-links {
     list-style: none;
@@ -70,6 +89,7 @@ body {
     color: #d63384;
 }
 
+
 .auth-buttons {
     display: flex;
     gap: 15px;
@@ -80,10 +100,8 @@ body {
     border: 1px solid #d63384;
     border-radius: 25px;
     text-decoration: none;
-    color: #ca136e;
+    color: #d63384;
     transition: 0.3s;
-   
-
 }
 
 .login-btn:hover {
@@ -104,7 +122,26 @@ body {
     background-color: #b0256a;
 }
 
-/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #d63384;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.hero {
+    flex: 1;
+}
+
 .hero {
     height: 90vh;
     display: flex;
@@ -116,7 +153,6 @@ body {
     background-size: cover;
 }
 
-/* LEFT TEXT */
 .left {
     width: 50%;
 }
@@ -147,14 +183,19 @@ body {
      padding-left: 30px;
 }
 
+
 .btn {
     padding: 8px 18px;
     border: 1px solid #d63384;
     border-radius: 25px;
     text-decoration: none;
-    color: #faf6f8;
+    color: #1a040f;
     transition: 0.3s;
-    background-color: #d63384;
+     background: #fab9d4;
+}
+.btn:hover {
+    background: #ff5fa2;
+    box-shadow: 5px 5px 6px  rgb(120, 120, 140);
 }
 
 .btn-outline {
@@ -162,17 +203,22 @@ body {
     border: 1px solid #d63384;
     border-radius: 25px;
     text-decoration: none;
-    color: #faf6f8;
+    color: #0a0909;
     transition: 0.3s;
-    background-color: #d63384;
+    background: #fab9d4;
+}
+.btn-outline:hover {
+     background: #ff5fa2;
+    box-shadow: 5px 5px 6px  rgb(120, 120, 140);
 }
 
-/* RIGHT LOGIN CARD */
 .right {
     width: 30%;
     display: flex;
     justify-content: center;
 }
+
+
 
 .login-card {
     background: #fff;
@@ -204,8 +250,8 @@ body {
 
 .login {
     width: 100%;
-    background: #d63384;
-    color: white;
+     background: #fab9d4;
+    color: rgb(5, 3, 3);
     border: none;
     padding: 10px;
     margin-top: 10px;
@@ -215,7 +261,15 @@ body {
     text-decoration: none;
 }
 
-/* Close Button (just UI like image) */
+.login:hover {
+    box-shadow: 5px 5px 6px  rgb(120, 120, 140);
+    transition: 0.3s ease-in-out;
+}
+
+.login:hover {
+    background: #ff5fa2;
+}
+
 .close {
     position: absolute;
     top: -10px;
@@ -227,10 +281,11 @@ body {
     cursor: pointer;
 }
 
+
 .footer {
     background-color: #f8c8dc;   
     color: #333;
-    padding: 50px 8% 25px;
+    padding: 80px 8% 25px
 }
 
 .footer-container {
@@ -250,6 +305,7 @@ body {
     margin-bottom: 15px;
     font-size: 22px;
 }
+
 
 .footer h3 {
     margin-bottom: 18px;
@@ -282,6 +338,10 @@ body {
     padding-left: 5px;
 }
 
+.menu-subitem{
+    text-decoration: none;
+    color: black;
+}
 
 .social-icons {
     margin-top: 20px;
@@ -332,6 +392,5 @@ body {
     flex-direction: column;
 }
 
-.hero {
-    flex: 1;
-}
+
+
