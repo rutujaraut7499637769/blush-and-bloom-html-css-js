@@ -47,7 +47,7 @@ document.getElementById("d"+(i+1)).innerHTML = products[i].discount;
 
 function addCart(btn){
 
-btn.innerHTML="✔ Added";
+btn.innerHTML="Added";
 btn.style.background="green";
 
 }
